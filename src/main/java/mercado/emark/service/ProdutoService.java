@@ -22,7 +22,6 @@ public class ProdutoService {
 
     @Transactional
     public Produto criarProduto(ProdutoDTO produtoDTO) {
-        // Verifica se já existe produto com o mesmo código
         if (produtoRepository.existsByCodigo(produtoDTO.getCodigo())) {
             throw new IllegalArgumentException("Já existe um produto com este código");
         }
