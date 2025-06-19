@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableFeignClients(basePackages = "mercado.emark.clients") // <-- Ativa o Feign Client
+@EnableFeignClients(basePackages = "mercado.emark.clients") 
 @EntityScan("mercado.emark.model")
 @EnableJpaRepositories("mercado.emark.repository")
 public class EmarkApplication {
