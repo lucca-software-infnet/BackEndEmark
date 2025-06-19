@@ -63,7 +63,7 @@ public class AuthorizationService {
             userType = "FUNCIONARIO";
         }
     
-        // Log no terminal
+        
         System.out.println("{");
         System.out.println("  \"token\": \"" + token + "\",");
         System.out.println("  \"userType\": \"" + userType + "\"");
