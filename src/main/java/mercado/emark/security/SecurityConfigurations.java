@@ -78,7 +78,7 @@ public class SecurityConfigurations {
                         .requestMatchers("/user/**").hasRole("USER")
                         .anyRequest().authenticated())
 
-                .authenticationProvider(authenticationProvider()) // importante registrar aqui
+                .authenticationProvider(authenticationProvider()) 
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
 
         return httpSecurity.build();
