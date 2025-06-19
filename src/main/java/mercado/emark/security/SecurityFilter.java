@@ -35,7 +35,6 @@ public class SecurityFilter extends OncePerRequestFilter {
         if (token != null) {
             var email = tokenService.validateToken(token);
             if (email != null) {
-                // Tenta encontrar como cliente
                 var clienteOpt = clienteRepository.findByEmail(email);
                 if (clienteOpt.isPresent()) {
                     var cliente = clienteOpt.get();
