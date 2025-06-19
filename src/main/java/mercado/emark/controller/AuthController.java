@@ -24,8 +24,7 @@ public class AuthController {
         return authorizationService.login(authenticationDTO);
     }
     @PostMapping("/logout")
-    public ResponseEntity<?> logoutUser(HttpServletRequest request) {
-        // Lógica para invalidar o token se necessário
+    public ResponseEntity<?> logoutUser(HttpServletRequest request) 
         return ResponseEntity.ok().build();
     }
 
